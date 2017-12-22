@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="autocell.js"></script>
+        <style>
+            body, table{
+                font-family: calibri;
+                font-size:12px;
+            }
+            div{
+                margin-bottom:10px;
+            }
+            table, td, th {
+                border: 1px solid #ccc;
+            }       
+            table td{
+                width:10px;
+                height:10px;
+                line-height:10px;
+                text-align: center;
+            }
+            table {
+                border-collapse: collapse;
+            }
+            input{
+                width:50px;
+                margin-right:20px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div id="input">
+            <label>Width: </label><input type="number" id="width" value="30" /> 
+            <label>Height: </label><input type="number" id="height" value="30" /> 
+            <label>Spawn Rate: </label><input type="number" id="spawnRate" value="10" /> 
+            <label>Die Rate: </label><input type="number" id="dieRate" value="70" /> 
+            <label>Speed: </label><input type="number" id="speed" value="10" /> 
+            <button onclick="runModel();">Go</button>
+        </div>
+        
+        <div id="output"></div>
+
+    </body>
+</html>
