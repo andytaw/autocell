@@ -79,7 +79,7 @@
 
         self.getPopulation = function(){
             return self.houses.reduce(function(a, b){
-                if (b === null) return b;
+                if (b === null) return a;
                 return b.population + a;
             }, 0);            
         };
